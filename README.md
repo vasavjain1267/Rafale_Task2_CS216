@@ -142,8 +142,8 @@ make
 ```
 
 Run the debugger:  
-```
-bashbtcdeb -v -s "<signature><public_key> OP_DUP OP_HASH160<recipient_public_key_hash>OP_EQUALVERIFYOP_CHECKSIG"
+```bash
+btcdeb -v -s "<signature><public_key> OP_DUP OP_HASH160<recipient_public_key_hash>OP_EQUALVERIFYOP_CHECKSIG"
 ```
 
 ---
