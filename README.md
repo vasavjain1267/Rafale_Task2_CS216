@@ -1,12 +1,19 @@
-# 🚀 Bitcoin Scripts in Regtest Mode - README
+# 🚀 Bitcoin Scripting
 
 ## 📌 Introduction
 This guide provides a step-by-step approach to running Bitcoin scripts in Regtest mode using Bitcoin Core. You'll learn how to install Bitcoin Core, configure it for Regtest mode, generate test blocks, and run Python scripts to interact with the Bitcoin network.
 
 ---
+👥 Team Members
+
+Rudra Jadon - Roll No: 230004043
+
+Yash Vardhan - Roll No: 230005052
+
+Vasav Jain - Roll No: 230001081
 
 ## 🛠 Prerequisites
-- macOS with Terminal access
+- macOS or Windows with Terminal access
 - Python installed
 - Bitcoin Core installed
 - Basic understanding of Bitcoin transactions
@@ -50,10 +57,10 @@ This guide provides a step-by-step approach to running Bitcoin scripts in Regtes
    regtest=1
    server=1
    txindex=1
-   rpcuser=rudrajadon
-   rpcpassword=rudra1234
+   rpcuser=RPC_USER
+   rpcpassword=RPC_PASSWORD
    rpcallowip=127.0.0.1
-   rpcport=18443
+   rpcport=RPC_PORT
    fallbackfee=0.0002
    mintxfee=0.00001
    txconfirmtarget=1
@@ -91,7 +98,7 @@ These scripts:
 
 Navigate to the **part1** folder and run the scripts:  
 ```bash
-cd /Users/rudrajadon/Desktop/bitcoin_project/part1
+cd /part1
 python -u run1.py
 python -u run2.py
 ```
@@ -114,7 +121,7 @@ This script:
 
 Navigate to the **part2** folder and run the script:  
 ```bash
-cd /Users/rudrajadon/Desktop/bitcoin_project/part2
+cd /part2
 python -u run3.py
 ```
 
@@ -133,8 +140,8 @@ make
 ```
 
 Run the debugger:  
-```bash
-btcdeb '[OP_DUP OP_HASH160 <pubkeyHash> OP_EQUALVERIFY OP_CHECKSIG]' <sig> <pubkey>
+```
+bashbtcdeb -v -s "<signature><public_key> OP_DUP OP_HASH160<recipient_public_key_hash>OP_EQUALVERIFYOP_CHECKSIG"
 ```
 
 ---
