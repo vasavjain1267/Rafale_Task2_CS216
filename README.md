@@ -3,12 +3,16 @@
 👥 Team Members
 
 Rudra Jadon - Roll No: 230004043
+
 Yash Vardhan - Roll No: 230005052
+
 Vasav Jain - Roll No: 230001081
 
 ---
+
 ## 📌 Introduction
 This guide provides a step-by-step approach to running Bitcoin scripts in Regtest mode using Bitcoin Core. You'll learn how to install Bitcoin Core, configure it for Regtest mode, generate test blocks, and run Python scripts to interact with the Bitcoin network.
+
 ---
 ## 🛠 Prerequisites
 - macOS or Windows with Terminal access
